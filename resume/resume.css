@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Madimi One', static;
+}
+
+:root {
+    --bg-colour: rgb(0, 0, 0);
+    --second-bg-colour: rgb(255,255,255);
+    --text-color: rgb(0, 0, 0);
+    --main-color: rgb(249, 110, 42);
+    --secondary-color: rgb(114,113,113);
+}
+
+html {
+    font-size: 60%;
+    overflow-x: hidden;
+}
+
+body {
+    background: var(--bg-colour);
+    color: var(--text-color);
+}
+
+span{
+    color: var(--main-color);
+}
+
+.resume-description {
+	margin-top: 1rem;
+	font-size: 1.5rem;
+	font-weight: 400;
+	color: var(--secondary-color);
+}
+.title {
+	color: var(--main-color);
+	font-weight: 700;
+	font-size: 2rem;
+	text-transform: uppercase;
+}
+
+.item-preTitle {
+	font-size: 1.4rem;
+	color: var(--secondary-color);
+	font-weight: 300;
+}
+
+.item-title {
+	font-size: 1.6rem;
+	color: rgb(255, 153, 0);
+	font-weight: 500;
+	margin: 0.8rem 0;
+}
+
+.item-subtitle {
+	font-size: 1.4rem;
+	color: var(--secondary-color);
+	font-weight: 400;
+}
+
+.resume-container {
+	max-width: 1100px;
+	width: 90%;
+	margin: 0 auto;
+	display: grid;
+	padding: 5rem;
+	background: var(--second-bg-colour);
+	grid-template-columns: 1fr 1fr;
+	gap: 4rem;
+}
+
+.profile {
+	grid-column: 1 / -1;
+	margin-bottom: 0.5rem;
+}
+
+.group-1 , .group-2 {
+	display: flex;
+	flex-direction: column;
+	gap: 5rem;
+}
+
+.group-3 {
+	max-width: 700px;
+	width: 100%;
+	margin: 0 auto;
+	grid-column: 1/-1;
+	display: flex;
+	flex-direction: row;
+	gap: 5rem;
+}
+.group-3 > div {
+	flex: 1;
+}
+
+.profile-container {
+	display: flex;
+	gap: 2rem;
+}
+
+.profile-name {
+	font-weight: 200;
+	font-size: 6rem;
+	display: block;
+}
+
+.profile-title {
+    margin-top: 2rem;
+	font-size: 2rem;
+	font-weight: 400;
+}
+
+.downloadBtn {
+	display: block;
+	text-decoration: underline;
+    color: white;
+	font-size: 1.6rem;
+	margin-top: 1rem;
+}
+
+.downloadBtn:hover {
+	color: var(--main-color);
+}
+
+.expertise-list, .curricular-list {
+	margin-top: 1rem;
+	margin-left: 2rem;
+	line-height: 2;
+}
+
+.edu-item , .skill-item ,.language-item , .curricular-item , .projectdone-item , .social-items {
+	margin-top: 2rem;
+}
+
+.social-item, .contact-item {
+	margin-top: 1.5rem;
+	font-size: 1.5rem;
+	display: flex;
+	gap: 0.5rem;
+	align-items: center;
+	justify-content: flex-start;
+	color: var(--text-color);
+}
+
+.social-item:hover {
+	color: var(--main-color);
+}
+
+.social-item svg {
+	width: 2rem;
+}
+
+hr {
+	grid-column: 1/-1;
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+	border: none;
+	border-top: 2px solid rgba(128, 128, 128, 0.229);
+}
