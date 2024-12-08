@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Portfolio</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" >
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/ico" href="images/favicon.ico">
+
+    <!-- JAVASCRIPT -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+</head>
+<body>
+    <!-- PRELOADER -->
+    <div class="loader">
+		<div class="intro">
+			<div class="intro-title">
+                <span style="--i:1;">l</span>
+                <span style="--i:2;">o</span>
+                <span style="--i:3;">a</span>
+                <span style="--i:4;">d</span>
+                <span style="--i:5;">i</span>
+                <span style="--i:6;">n</span>
+                <span style="--i:7;">g</span>
+                <span style="--i:8;">.</span>
+                <span style="--i:9;">.</span>
+                <span style="--i:10;">.</span>
+            </div>
+		</div>
+	</div>
+
+    <!-- CONSTRUCTION IMAGE -->
+    <!-- <div class="construction-container">
+        <img src="images/website-construction.png" alt="website construction">
+    </div> -->
+
+    <!-- HEADER / NAVIGATION BAR -->
+    <header class="header">
+        <a href="#home" class="logo"><img src="images/logo.svg" style="width: 50%; height: 50%"></a>
+
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a> 
+            <a href="#about">About</a>
+            <a href="#project">Project</a>
+            <a href="#resume">Resume</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- HOME SECTION -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Hello, I'm <span>Jing Fei</span></h1>
+            <h3 class="text-animation">I'm a <span id="animation">
+            </span></h3>
+        </div>
+        <div class="home-img">
+            <img src="images/ljf.jpg" alt="">
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+
+    <section class="about" id="about">
+        <h2 class="headingAbout">
+            <span>About</span> Me
+        </h2>
+
+        <div class="about-container">  
+            <div class="about-banner">
+                <img src="./images/ljf-about.png" loading="lazy" alt="Law Jing Fei" class="img-cover">
+            </div>
+            
+            <div class="about-content">
+                <h2 class="content-text">
+                    Hi, I am Law Jing Fei. 
+                </h2>
+                <h2 class="content-text">
+                    A passionate multimedia designer and a student at 
+                    Tunku Abdul Rahman University of Management and Technology.
+                    With a strong foundation in creative design and a keen eye for detail, 
+                    I specialize in crafting visually compelling and 
+                    user-focused multimedia experiences. 
+                </h2>
+                <h2 class="content-text">
+                    I am eager to apply my skills and grow further during an internship from 
+                    10th February 2025 to 2nd May 2025, 
+                    where I aim to contribute fresh ideas and 
+                    innovative solutions to dynamic projects.
+                </h2>
+            </h2>
+            </div>
+        </div>
+
+        <h2 class="headingTools">
+            <span>Tools</span> I Used:
+        </h2>
+
+        <div class="slider" style="
+            --width: 100px;
+            --height: 100px;
+            --quantity: 7;">
+            <div class="list">
+                <div class="item" style="--position: 1"><img src="images/Tool/photoshop.png" alt=""></div>
+                <div class="item" style="--position: 2"><img src="images/Tool/illustrator.png" alt=""></div>
+                <div class="item" style="--position: 3"><img src="images/Tool/premiere-pro.png" alt=""></div>
+                <div class="item" style="--position: 4"><img src="images/Tool/after-effects.png" alt=""></div>
+                <div class="item" style="--position: 5"><img src="images/Tool/animate.png" alt=""></div>
+                <div class="item" style="--position: 6"><img src="images/Tool/figma.png" alt=""></div>
+                <div class="item" style="--position: 7"><img src="images/Tool/3dsmax.png" alt=""></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECT SECTION -->
+    <section class="project" id="project">
+        <h5 class="headingProject">
+            Lastest <span>Project(s)</span> 
+            <a href="https://www.behance.net/jingfeilaw" target="_blank"><i class='bx bx-link-external'></i></a>
+        </h5>
+
+        <ul class="filter-list">
+            <li class="filter-item">
+                <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+                <button data-filter-btn>Logo</button>
+            </li>
+
+            <li class="filter-item">
+                <button data-filter-btn>3D</button>
+            </li>
+
+            <li class="filter-item">
+                <button data-filter-btn>Photography</button>
+            </li>
+
+            <li class="filter-item">
+                <button data-filter-btn>Poster</button>
+            </li>
+
+            <li class="filter-item">
+                <button data-filter-btn>Realistic Drawing</button>
+            </li>
+        </ul>
+
+        <div class="filter-select-box">
+            <button class="filter-select" data-select>
+                <div class="select-value" data-selecct-value>Select category</div>
+                <div class="select-icon">
+                    <i class='bx bx-chevron-down'></i>
+                </div>
+            </button>
+
+            <ul class="select-list">
+                <li class="select-item">
+                    <button data-select-item>All</button>
+                </li>
+
+                <li class="select-item">
+                    <button data-select-item>Logo</button>
+                </li>
+
+                <li class="select-item">
+                    <button data-select-item>3D</button>
+                </li>
+
+                <li class="select-item">
+                    <button data-select-item>Photography</button>
+                </li>
+
+                <li class="select-item">
+                    <button data-select-item>Poster</button>
+                </li>
+
+                <li class="select-item">
+                    <button data-select-item>Realistic Drawing</button>
+                </li>
+            </ul>
+        </div>
+
+        <ul class="project-list">
+            <li class="project-item  active" data-filter-item data-category="logo">
+                <a href="https://www.behance.net/gallery/213412285/Logo-Design" target="_blank">
+                    <figure class="project-img">
+                        <img src="images/Logo/signature.png" alt="signature" loading="lazy">
+                    </figure>
+                    <h3 class="project-title">Signature</h3>
+                    <p class="project-category">Logo</p>
+                </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="logo">
+                <a href="https://www.behance.net/gallery/213412285/Logo-Design" target="_blank">
+                    <figure class="project-img">
+                        <img src="images/Logo/signature variation.png" alt="signature variation" loading="lazy">
+                    </figure>
+                    <h3 class="project-title">Signature Variation</h3>
+                    <p class="project-category">Logo</p>
+                </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="3d">
+                <a href="https://www.behance.net/gallery/213412043/3ds-Max" target="_blank">
+                    <figure class="project-img">
+                        <img src="images/3D/objects.jpg" alt="objects" loading="lazy">
+                    </figure>
+                    <h3 class="project-title">Objects</h3>
+                    <p class="project-category">3D</p>
+
+                </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="3d">
+                <a href="https://www.behance.net/gallery/213412043/3ds-Max" target="_blank">
+                    <figure class="project-img">
+                        <img src="images/3D/sofa.jpeg" alt="sofa" loading="lazy">
+                    </figure>
+                    <h3 class="project-title">Sofa</h3>
+                    <p class="project-category">3D</p>
+                </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="3d">
+                <a href="https://www.behance.net/gallery/213412043/3ds-Max" target="_blank">
+                    <figure class="project-img">
+                        <img src="images/3D/sunglasses.jpg" alt="sunglasses" loading="lazy">
+                    </figure>
+                    <h3 class="project-title">Sunglasses</h3>
+                    <p class="project-category">3D</p>
+                </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="photography">
+                <a href="https://www.behance.net/gallery/213450081/Late-Night-Photography" target="_blank">
+                    <figure class="project-img">
+                        <img src="images/Photography/sunset.jpeg" alt="sunset" loading="lazy">
+                    </figure>
+                    <h3 class="project-title">Sunset</h3>
+                    <p class="project-category">Photography</p>
+                </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="photography">
+                <a href="https://www.behance.net/gallery/213450081/Late-Night-Photography" target="_blank">
+                    <figure class="project-img">
+                        <img src="images/Photography/bukitbintang.jpg" alt="bukitbintang" loading="lazy">
+                    </figure>
+                    <h3 class="project-title">Bukit Bintang Street View</h3>
+                    <p class="project-category">Photography</p>
+                </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="photography">
+                <a href="https://www.behance.net/gallery/213528789/Portrait" target="_blank">
+                    <figure class="project-img">
+                        <img src="images/Photography/model1.jpeg" alt="model" loading="lazy">
+                    </figure>
+                    <h3 class="project-title">Model</h3>
+                    <p class="project-category">Photography</p>
+                </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="photography">
+                <a href="https://www.behance.net/gallery/213528789/Portrait" target="_blank">
+                    <figure class="project-img">
+                        <img src="images/Photography/model2.jpeg" alt="model" loading="lazy">
+                    </figure>
+                    <h3 class="project-title">Model</h3>
+                    <p class="project-category">Photography</p>
+                </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="photography">
+                <a href="https://www.behance.net/gallery/213528905/Portrait" target="_blank">
+                    <figure class="project-img">
+                        <img src="images/Photography/model3.jpeg" alt="model" loading="lazy">
+                    </figure>
+                    <h3 class="project-title">Model</h3>
+                    <p class="project-category">Photography</p>
+                </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="photography">
+                <a href="https://www.behance.net/gallery/213528905/Portrait" target="_blank">
+                    <figure class="project-img">
+                        <img src="images/Photography/model4.jpeg" alt="model" loading="lazy">
+                    </figure>
+                    <h3 class="project-title">Model</h3>
+                    <p class="project-category">Photography</p>
+                </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="photography">
+                <a href="https://www.behance.net/gallery/213528867/Portrait" target="_blank">
+                    <figure class="project-img">
+                        <img src="images/Photography/model5.jpeg" alt="model" loading="lazy">
+                    </figure>
+                    <h3 class="project-title">Model</h3>
+                    <p class="project-category">Photography</p>
+                </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="photography">
+                <a href="https://www.behance.net/gallery/213528867/Portrait" target="_blank">
+                    <figure class="project-img">
+                        <img src="images/Photography/model6.jpeg" alt="model" loading="lazy">
+                    </figure>
+                    <h3 class="project-title">Model</h3>
+                    <p class="project-category">Photography</p>
+                </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="photography">
+                <a href="https://www.behance.net/gallery/213529017/Portrait" target="_blank">
+                    <figure class="project-img">
+                        <img src="images/Photography/model7.jpg" alt="model" loading="lazy">
+                    </figure>
+                    <h3 class="project-title">Model</h3>
+                    <p class="project-category">Photography</p>
+                </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="photography">
+                <a href="https://www.behance.net/gallery/213529017/Portrait" target="_blank">
+                    <figure class="project-img">
+                        <img src="images/Photography/model8.jpg" alt="model" loading="lazy">
+                    </figure>
+                    <h3 class="project-title">Model</h3>
+                    <p class="project-category">Photography</p>
+                </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="poster">
+                <a href="https://www.behance.net/gallery/213411841/Poster-Design" target="_blank">
+                    <figure class="project-img">
+                        <img src="images/Poster/courage.png" alt="courage" loading="lazy">
+                    </figure>
+                    <h3 class="project-title">Courage</h3>
+                    <p class="project-category">Poster</p>
+                </a>
+            </li>
+
+            
+            <li class="project-item  active" data-filter-item data-category="poster">
+                <a href="https://www.behance.net/gallery/213411841/Poster-Design" target="_blank">
+                    <figure class="project-img">
+                        <img src="images/Poster/cat fish.jpg" alt="cat fish" loading="lazy">
+                    </figure>
+                    <h3 class="project-title">Cat Fish</h3>
+                    <p class="project-category">Poster</p>
+                </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="poster">
+                <a href="https://www.behance.net/gallery/213411841/Poster-Design" target="_blank">
+                    <figure class="project-img">
+                        <img src="images/Poster/malaysia day.jpg" alt="malaysia day" loading="lazy">
+                    </figure>
+                    <h3 class="project-title">Malaysia Day</h3>
+                    <p class="project-category">Poster</p>
+                </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="realistic drawing">
+                <a href="https://www.behance.net/gallery/187262097/ASSIGNMENT" target="_blank">
+                    <figure class="project-img">
+                        <img src="images/Realistic Drawing/ear.jpg" alt="ear" loading="lazy">
+                    </figure>
+                    <h3 class="project-title">Ear</h3>
+                    <p class="project-category">Realisitic Drawing</p>
+                </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="realistic drawing">
+                <a href="https://www.behance.net/gallery/187262097/ASSIGNMENT" target="_blank">
+                    <figure class="project-img">
+                        <img src="images/Realistic Drawing/eye.jpg" alt="eye" loading="lazy">
+                    </figure>
+                    <h3 class="project-title">Eye</h3>
+                    <p class="project-category">Realisitic Drawing</p>
+                </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="realistic drawing">
+                <a href="https://www.behance.net/gallery/187262097/ASSIGNMENT" target="_blank">
+                    <figure class="project-img">
+                        <img src="images/Realistic Drawing/lips.jpg" alt="lips" loading="lazy">
+                    </figure>
+                    <h3 class="project-title">Lips</h3>
+                    <p class="project-category">Realisitic Drawing</p>
+                </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="realistic drawing">
+                <a href="https://www.behance.net/gallery/187262097/ASSIGNMENT" target="_blank">
+                    <figure class="project-img">
+                        <img src="images/Realistic Drawing/nose.jpg" alt="nose" loading="lazy">
+                    </figure>
+                    <h3 class="project-title">Nose</h3>
+                    <p class="project-category">Realisitic Drawing</p>
+                </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="realistic drawing">
+                <a href="https://www.behance.net/gallery/187262097/ASSIGNMENT" target="_blank">
+                    <figure class="project-img">
+                        <img src="images/Realistic Drawing/women playing tennis.jpg" alt="women playing tennis" loading="lazy">
+                    </figure>
+                    <h3 class="project-title">Women Playing Tennis</h3>
+                    <p class="project-category">Realisitic Drawing</p>
+                </a>
+            </li>
+
+        </ul>
+    </section>
+
+    <!-- RESUME SECTION -->
+
+    <section class="resume" id="resume">
+        <h5 class="headingResume">
+            My <span>Resume</span>
+        </h5>
+
+        <div class="resume-container">
+            <div class="profile">
+                <div class="profile-container">
+                    <img src="../images/ljf-profile.JPG" alt="law jing fei" style="width: 25%;">
+                    <div>
+                        <h1 class="profile-name">
+                            Law <span>Jing Fei</span>
+                        </h1>
+                        <p class="profile-title">Multimedia Design Intern</p>
+                        <p class="resume-description profile-description">
+                            A student from Tunku Abdul Rahman University of Management and Technology looking for an internship opportunity from 10th February 2025 to 2nd May 2025.
+                        </p>
+
+                        <a class="downloadBtn" href="resume/resume.pdf" download="resume.pdf">
+                            <span style="--i:1;">D</span>
+                            <span style="--i:2;">o</span>
+                            <span style="--i:3;">w</span>
+                            <span style="--i:4;">n</span>
+                            <span style="--i:5;">l</span>
+                            <span style="--i:6;">o</span>
+                            <span style="--i:7;">a</span>
+                            <span style="--i:8;">d&nbsp;</span>
+                            <span style="--i:9;">M</span>
+                            <span style="--i:10;">e</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+    
+            <hr>
+            <div class="group-1">
+                <div class="expertise">
+                    <h3 class="title">Expertise</h3>
+                    <ul class="expertise-list resume-description">
+                        <li>Adobe Photoshop</li>
+                        <li>Adobe Illustrator</li>
+                        <li>Adobe After Effects</li>
+                        <li>Adobe Animate</li>
+                        <li>Adobe Premier Pro</li>
+                        <li>Figma</li>
+                        <li>3Ds Max</li>
+                    </ul>
+                </div>
+    
+                <div class="edu">
+                    <h3 class="title">Education</h3>
+    
+                    <div class="edu-item">
+                        <p class="item-preTitle">Jul 2023 - Present</p>
+                        <h4 class="item-title">Diploma in Multimedia Design (CGPA : 3.59)</h4>
+                        <p class="item-subtitle">
+                            Tunku Abdul Rahman University of Management and Technology
+                        </p>
+                    </div>
+    
+                    <div class="edu-item">
+                        <p class="item-preTitle">Jan 2018 - Apr 2023</p>
+                        <h4 class="item-title">SMK Batu Unjur</h4>
+                    </div>
+                </div>
+    
+                <div class="skill">
+                    <h3 class="title">Skills</h3>
+    
+                    <div class="skill-item">
+                        <div class="item-title">Communication</div>
+                        <p class="resume-description">
+                            I can understand and communicate with Mandarin, English, 
+                            Malay and Hokkien fluently. As well as good in entertaining people.
+                        </p>
+                    </div>
+    
+                    <div class="skill-item">
+                        <div class="item-title">Teamwork</div>
+                        <p class="resume-description">
+                            I have many experiences playing in a band as a drummer.
+                            I truly understand what it means to be a part of something bigger than myself.
+                            This had taught me how to work with a group to accomplish a shared goal.
+                        </p>
+                    </div>
+    
+                    <div class="skill-item">
+                        <div class="item-title">Leadership</div>
+                        <p class="resume-description"> 
+                            As a group representative, I demonstrated strong leadership skills by 
+                            facililating communication between teachers and students. 
+                            I was responsible for controlling the class when the tutor was not around.
+                        </p>
+                    </div>
+                </div>
+            
+                <div class="language">
+                    <h3 class="title">Language</h3>
+                    <div class="language-item">
+                        <div class="item-title">Mandarin</div>
+                        <p class="item-subtitle">&#9733; &#9733; &#9733; &#9733; &#9734;</p>
+                    </div>
+    
+                    <div class="language-item">
+                        <div class="item-title">English</div>
+                        <p class="item-subtitle">&#9733; &#9733; &#9733; &#9733; &#9734;</p>
+                    </div>
+    
+                    <div class="language-item">
+                        <div class="item-title">Malay</div>
+                        <p class="item-subtitle">&#9733; &#9733; &#9733; &#9733; &#9734;</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="group-2">
+                <div class="projectdone">
+                    <h3 class="title">Project</h3>
+                    <div class="projectdone-item">
+                        <h4 class="item-title">Drawing Portraits</h4>
+                        <p class=" resume-description">
+                            Executed detailed portrait studies focusing on accurate 
+                            representation, demonstrating skills in value, texture, and perspective.
+                        </p>
+                    </div>
+    
+                    <div class="projectdone-item">
+                        <h4 class="item-title">Poster Design</h4>
+                        <p class=" resume-description">
+                            Independently designed a promotional poster that 
+                            successfully balanced visual appeal with informative content.
+                        </p>
+                    </div>
+    
+                    <div class="projectdone-item">
+                        <h4 class="item-title">Website Mockups</h4>
+                        <p class=" resume-description">
+                            Designed website mockups with focus on user-friendly interface and modern web aesthetics.
+                        </p>
+                    </div>
+    
+                    <div class="projectdone-item">
+                        <h4 class="item-title">Remake Music Videos</h4>
+                        <p class=" resume-description">
+                            Combine video editing skills to produce creative music videos that sync visuals with the music.
+                        </p>
+                    </div>
+    
+                    <div class="projectdone-item">
+                        <h4 class="item-title">Brand Identity Creation</h4>
+                        <p class=" resume-description">
+                            Design logos, and business cards for assignment purpose. 
+                            Use Adobe Illustrator and Photoshop to craft cohesive brand aesthetics.
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="curricular">
+                    <h3 class="title">Extracurricular Activities</h3>
+    
+                    <div class="curricular-item">
+                        <h4 class="item-title">Member of Board of Student Librarian</h4>
+                        <ul class="curricular-list resume-description">
+                            <li>Maintain organized cataloging of books and keep accurate inventory records.</li>
+                            <li>Supervise students' library use and provide assistance and reading advice as necessary</li>
+                        </ul>
+                    </div>
+    
+                    <div class="curricular-item">
+                        <h4 class="item-title">Member of Music Society Band</h4>
+                        <ul class="curricular-list resume-description">
+                            <li>Collaborated with team members to perform at school events, enhancing teamwork and discipline.</li>
+                            <li>Developed time management skills by balancing practice sessions with academic responsibilities</li>
+                        </ul>
+                    </div>
+    
+                    <div class="curricular-item">
+                        <h4 class="item-title">Member of School Basketball Team</h4>
+                        <ul class="curricular-list resume-description">
+                            <li>Played for the school basketball team, participated in matches, and worked hard during practice.</li>
+                            <li>Developed discipline, teamwork, and perseverance through training and games.</li>
+                        </ul>
+                    </div>
+
+                    <div class="curricular-item">
+                        <h4 class="item-title">Class Representative</h4>
+                        <ul class="curricular-list resume-description">
+                            <li>Represented classmates' concerns and feedback to faculty, fostering effective communication between students and staff.</li>
+                            <li>Demonstrated leadership skills by organizing meetings, managing tasks, and ensuring classmates stayed informed.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    
+            <hr>
+            <div class="group-3">
+                <div class="contactResume">
+                    <h3 class="title">Contact</h3>
+                    <div class="contact-info">
+                        <p class="contact-item">
+                            Klang, Selangor
+                        </p>
+    
+                        <p class="contact-item">
+                            +60 17-227-0719
+                        </p>
+                        
+                        <p class="contact-item">
+                            jingfeilaw@gmail.com
+                        </p>
+                    </div>
+                </div>
+            
+                <div class="social">
+                    <h3 class="title">Socials</h3>
+                    <div class="social-items">
+                        <a href="https://www.facebook.com/share/9RaWoBRRwb1AsPDK/?mibextid=LQQJ4d" target="_b" class="social-item ">
+                            <i class='bx bxl-facebook-square'></i>
+                            /Jing Fei Law
+                        </a>
+                        <a href="https://www.instagram.com/jingfei.law?igsh=MW8xNWF1bnZnZWIxZg==" target="_blank" class="social-item">
+                            <i class='bx bxl-instagram' ></i>
+                            /jingfei.law
+                        </a>
+                        <a href="https://www.behance.net/jingfeilaw" target="_blank" class="social-item">
+                            <i class='bx bxl-behance'></i>
+                            /jingfeilaw
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact" id="contact">
+        <h2 class="headingContact">
+            Contact <span>me</span>
+        </h2>
+
+        <form id="contact-form">
+            <input type="hidden" name="_captcha" value="false">
+            <div class="input-group">
+                <div class="input-box">
+                    <input type="text" placeholder="Full Name" class="input-name" id="input-name">
+                    <input type="email" placeholder="Email" class="input-email" id="input-email">
+                </div>
+                <div class="input-box">
+                    <input type="number" placeholder="Phone Number" class="input-phoneNo" id="input-phoneNo">
+                    <input type="text" placeholder="Subject" class="input-subject" id="input-subject">
+                </div>
+            </div>
+            <div class="input-group-2">
+                <textarea cols="30" rows="10" placeholder="Your message" class="input-msg" id="input-msg"></textarea>
+                <button type="submit" class="btn" onclick="return popUp();">Send Message</button>
+                <a href="#contact" id="contact-link" style="display: none;">Go to Contact</a>
+            </div>
+        </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="social">
+            <a href="https://www.facebook.com/share/9RaWoBRRwb1AsPDK/?mibextid=LQQJ4d" target="_blank"><i class='bx bxl-facebook' ></i></a>
+            <a href="https://www.instagram.com/jingfei.law?igsh=MW8xNWF1bnZnZWIxZg==" target="_blank"><i class='bx bxl-instagram' ></i></a>
+            <a href="https://www.behance.net/jingfeilaw" target="_blank"><i class='bx bxl-behance'></i></a>
+        </div>
+
+        <ul class="list">
+            <li>
+                <a href="#contact">FAQ</a>
+            </li>
+            <li>
+                <a href="#project">Project</a>
+            </li>
+            <li>
+                <a href="#resume">Resume</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+            <li>
+                <a href="#about">About</a>
+            </li>
+        </ul>
+        <p class="copyright">
+            @ Jing Fei | All Rights Reserved
+        </p>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script src="jQuery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+</body>
+</html>
